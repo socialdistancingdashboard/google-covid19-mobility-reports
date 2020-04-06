@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Entered the install phase...
       - apt-get update -y
-      - apt-get install -y make poppler
+      - apt-get install -y make poppler-utils
     finally:
       - echo This always runs even if the update or install command fails
       
