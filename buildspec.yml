@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Entered the install phase...
       - apt-get update -y
-      - apt-get install -y make poppler-utils
+      - apt-get install -y make poppler
     finally:
       - echo This always runs even if the update or install command fails
       
@@ -22,7 +22,7 @@ phases:
     commands:
       - echo BEGIN BUILD PHASE
       - make
-      - python main.py
+      - python upload.py
     finally:
       - echo END BUILD PHASE
 
