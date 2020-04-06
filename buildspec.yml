@@ -14,6 +14,7 @@ phases:
   pre_build:
     commands:
       - echo BEGIN PRE_BUILD PHASE
+      - pip install -r requirements.txt
     finally:
       - echo END PRE_BUILD PHASE
 
@@ -21,7 +22,7 @@ phases:
     commands:
       - echo BEGIN BUILD PHASE
       - make
-      -
+      - python main.py
     finally:
       - echo END BUILD PHASE
 
