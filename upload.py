@@ -1,7 +1,6 @@
 import json
 from datetime import datetime, timedelta
 import boto3
-from datetime import datetime, timedelta
 
 s3 = boto3.resource('s3')
 date_str = name.split('+')[0]
